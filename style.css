@@ -36,7 +36,7 @@ body {
 
 .link-tree a {
     background-color: var(--accentcolor);
-    color: #FFFFFFFF;
+    color: var(--accentcolor);
     width: 100%;
     padding: 15px;
     text-decoration: none;
@@ -50,7 +50,7 @@ body {
 
 .link-tree a:hover {
     background-color: #170031;
-    color: var(--accentcolor);
+    color: #FFFFFFFF;
 }
 
 @media (min-width: 1024px) {
