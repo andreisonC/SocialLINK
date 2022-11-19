@@ -35,8 +35,8 @@ body {
 }
 
 .link-tree a {
-    background-color: #FFF;
-    color: var(--bgcolor);
+    background-color: #330066;
+    color: var #FFF;
     width: 100%;
     padding: 15px;
     text-decoration: none;
@@ -57,4 +57,3 @@ body {
     .link-tree {
         width: 40vw;
     }
-}
