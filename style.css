@@ -58,28 +58,3 @@ body {
         width: 40vw;
     }
 }
-
-.link-tree a {
-    background-color: #330066;
-    color: #FFF;
-    width: 100%;
-    padding: 15px;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: solid 2px var(--accentcolor);
-    transition: all 0.5s linear;
-}
-
-.link-tree a:hover {
-    background-color: var(--bgcolor);
-    color: var(--accentcolor);
-}
-
-@media (min-width: 1024px) {
-    .link-tree {
-        width: 40vw;
-    }
-}
