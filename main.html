@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Linnks</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    section{
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom, #e925df, #330a7e);
+    }
+    section::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      bottom: 0;
+      z-index: 1;
+      backdrop-filter: blur(5px);
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    section .color{
+      position: absolute;
+      filter: blur(150px);
+    }
+
+    section .color:nth-child(1){
+      background: #ff359b;
+      width: 600px;
+      height: 600px;
+      top: -350px;
+    }
+    section .color:nth-child(2){
+      background: #8400ff;
+      width: 500px;
+      height: 500px;
+      bottom: -150px;
+      left: 100px;
+    }
+    section .color:nth-child(3){
+      background: #960a8a;
+      width: 300px;
+      height: 300px;
+      bottom: -150px;
+      right: 0;
+    }
+    ul{
+      position: relative;
+      display: flex;
+      z-index: 2;
+    }
+    ul li{
+      position: relative;
+      list-style: none;
+      margin: 10px;
+    }
+    ul li a{
+      position: relative;
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      backdrop-filter: blur(2px);
+      transition: 0.5s;
+      overflow: hidden;
+    }
+    ul li a:hover{
+      transform: translateY(-20px);
+    }
+    ul li a::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.5);
+      transform: skewX(45deg) translateX(150px);
+      transition: 0.5s;
+    }
+    ul li a:hover::before{
+      transform: skewX(45deg) translateX(-150px);
+    }
+
+  </style>
+</head>
+<body>
+  <section>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <ul>
+      <li><a href="https://www.instagram.com/amdre.py/"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://twitter.com/andrezinMTbala"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://github.com/andreisonC"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/andreison-de-castro-509255256/"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="https://wa.me/5585997612795?text=Ol%C3%A1%2C+vim+pelo+link+das+redes+sociais%21"><i class="fa fa-whatsapp"></i></a></li>
+      <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAESklEQVR4nO2YXYgWVRjHZ3VtVRDdUHfXutPKTBQxXaECu1twTdwNuig/W7qQLtoUC0EK2Rtv9KIPqQtdXYTSSgvCBTXsE8TUcPEjP8oLX3NFBVuLXRf8yeP+R6bxzLyz887GG80fXnjnnP/zcc6cec7zPJ6XI0eOHDn+SwCmAa8DW4HjwF/AN0BFAtkK4AfJHJMO0zXt33L+UeAd4ALRqE+gpz5G/oJsPDIUCxgPfAD0BgxeB/YAq4EG4KDGfwL2AaeAG8Bt/ez/Sc0ZB8k0SMde6fRhtt4321ktohG4IuX9wG7gBWAMsFjH4irp0S0dpmuMdH8mW4Y/gAWlLuJZ7SbayceBh4E2h/OXgG3a3YXAk0A1MEK/ao0tFKcdKIR0XAU2iPsE0Klx8+GZtIuoBM5L0SZ9oKtCr/8I0Ao8VcJmTQfeBH4O6L0uW2Zzs8bOmU9pDCyXgt+Ah4BJAUP2duamdb5IEOgM2KmTbfPBsDyN0i4JL9Wz7c4yYH7WC3DYnm+2As9L5UvXYBU9F/jQRgyFsymOeUE+Jf9WgB0SavPKBAwEGMP2pAIjgT8lNMUrEwBT5NNN8zGJgMVzw1GvzMBAOmNYlITcIfI6r8wArJNvHcWIFbppDdO9MgMDdw7yMTo5BWaJWEiYxVo0WQOcVW70qy63yixlQhvtR6+ZXhSAtSK1J1RqeZcLn7o2Io1MGBa1xF8TR/pSpPuXUYKb/4YCxFigSc+GJVnIhAGsEHdPHOmySEULHOBHcVeExl/V+PdZyIRheZ24l+KKJnSHDHOS/sm36s4wITQ+UeO3spAJw3wL3HOTXASrAwyHvAQwo0Wc6slCxgXgO/EbXZMWOQwfOaWjj8nKFEcrsYwLwMfiv+GatFLWsNYp/SB/WeDDbdKH2xz4cF/OQsYF4C3x33NNWo1haHZKu0PpLtz4JCb8DkrGBeBFyXwdV38kLph0udmRPKPL7bS9bmB4ljIxXZgTrsmLmpwaESmeThLNsgIwXDZdb3aqfP3dJejX4nWOudc0dwh4bAj9vwezAXwrmy1eCCqBDdc8x2SfJmsiLqFCoKPxIVDrZQygVrr9zk3B1dgwHzXf51JibU+UpgyLaNJZu+eOeHa+v1CqUVWC86OBl2S3T7rvyNb4iGP+lXjHvYhd9y8sS+xGRxieocjjN9DQTXtQrRvLheapL1WjirPKLkFgsj7UV4CNwIFQ97JfumfELPpzcW9FplLqKvqLORXXMdExWE92MF2RxxV4XhHOX0R891GRwu8jGfZrgQ8cH2CLOF3ivA3sBA6r3ujWjvfq/1nN7RS3MRD2tzj0V4ljb86H+TY7dhEBBaPUuuwJHR977S3AHEu5Nf53KdWkqj7TYVgi3S2y5SeHyJd3zbc0RqqVDtgxi8KqtIsI2LH2aBROyodxpdoJ7lyrOuW/aIc6kqYVRXRXSFePdO8utaecI0eOHDly/C9xF02wifdhaEtaAAAAAElFTkSuQmCC"></li>
+        
+    
+  </section>
+</body>
+</html>
